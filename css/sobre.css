@@ -39,7 +39,7 @@
 /* Estilo das caixas de história */
 .sobre-item {
     max-width: 1200px;
-    background-image: url('/images/titulo.jpg');
+    background-image: url('images/titulo.jpg');
     border-radius: 12px;
     border:#ffffff solid 4px;
     padding: 2rem;
