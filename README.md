@@ -6,12 +6,10 @@ Este é um portfólio simples e responsivo feito com **HTML**, **CSS** e **JavaS
 
 portfolio \
 ├── index.html # Página principal\
-├── css/\
-│ └── style.css # Estilos do portfólio\
-├── js/\
-│ └── script.js # Scripts para interatividade\
-├── images/\
-│ └── foto-perfil.jpg # Imagens usadas no site\
+├── components.js # Código Componentes
+├── css/\ Estilos do portfólio\
+├── js/\ Scripts para interatividade\
+├── images/\ Imagens usadas no site\
 └── README.md # Documentação do projeto\
 
 
