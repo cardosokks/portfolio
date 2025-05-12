@@ -1,5 +1,4 @@
 const components = [
-  { tag: 'navbar-component', path: 'components/navbar.html', templateId: 'navbar-template' },
   { tag: 'sobre-component', path: 'components/sobre.html', templateId: 'sobre-template' },
   { tag: 'social-component', path: 'components/social.html', templateId: 'social-template' },
   { tag: 'projeto-component', path: 'components/projeto.html', templateId: 'projeto-template' },
