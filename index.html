@@ -2,12 +2,45 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo Jhonny R Cardoso</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
 </head>
 <body>
-<h1>Bem-vindo ao meu site!</h1>
-<img src="images/logo.png" alt="Logo">
+    <nav class="navbar">
+        <div class="logo"><a href="/">RICARDO/JRC</a></div>
+    
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre-container">Sobre</a></li>
+          <li><a href="#projeto-container">Projetos</a></li>
+          <li><a href="#Contato">Contato</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </nav>
+
+    <div class="container">
+        <section class="presentation">
+            <div class="presentation-content">
+                <div class="text">
+                    <h1>Olá, sou Ricardo Cardoso</h1>
+                    <p>Bem-vindo ao meu portfólio profissional. Aqui você pode conhecer um pouco mais sobre mim, meus projetos e habilidades.</p>
+                    <social-component></social-component>
+                </div>
+                <div class="perfil-circle">
+                    <img src="images/perfil.jpg" alt="Imagem de Perfil">
+                </div>         
+            </div>
+        </section>
+        
+        <separator-component></separator-component>
+        <sobre-component></sobre-component>
+        <projeto-component></projeto-component>
+    </div>
+    <footer-component></footer-component>
+    
+<script src="components.js"></script>
 <script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/5fa3aac64f.js" crossorigin="anonymous"></script>
 </body>
 </html>
