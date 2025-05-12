@@ -1,5 +1,7 @@
 # 🌐 Portfólio Pessoal
 
+Acesse: https://cardosokks.github.io/portfolio/
+
 Este é um portfólio simples e responsivo feito com **HTML**, **CSS** e **JavaScript** puro, sem frameworks. Ele apresenta informações sobre mim, minhas habilidades, projetos e formas de contato.
 
 ## 🗂️ Estrutura de Pastas
