@@ -40,6 +40,7 @@
 .sobre-item {
     max-width: 1200px;
     background-image: url('../images/titulo.jpg');
+    background-color: black;
     border-radius: 12px;
     border:#ffffff solid 4px;
     padding: 2rem;
