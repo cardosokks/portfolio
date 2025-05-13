@@ -4,7 +4,7 @@
 .sobre-container {
     background: linear-gradient(to bottom, #000000, #ffffff);
     margin: 0 auto;
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     position: relative;
     text-align: center;
     color: var(--color-text);
@@ -30,11 +30,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  margin-bottom: 100px;
+  border-radius: 50%;
+}
+.banner-titulo-2 {
+  width: 100%;
+  max-height: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 100px;
 }
 
 .banner-titulo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Máscara de transparência nas bordas */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 80%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 80%, transparent 100%);
+}
+
+.banner-titulo-2 img {
   width: 100%;
   height: auto;
   object-fit: cover;

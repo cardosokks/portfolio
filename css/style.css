@@ -41,7 +41,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--color-background); /* cor de fundo visível */
+    background-color:rgba(0, 0, 0, 0.641); /* cor de fundo visível */
     color: var(--color-text);
     animation: fadeInUp 1s ease forwards;
     backdrop-filter: blur(10px);
