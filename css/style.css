@@ -260,8 +260,10 @@ body {
     }
 
     .perfil-circle {
-        margin-left: 0;
-    }
+        width: 200px;
+        height: 200px;
+        transform: none;
+  }
     .sobre-item,
     .sobre-item.direita {
         flex-direction: column;

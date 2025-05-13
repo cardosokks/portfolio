@@ -18,30 +18,9 @@
     gap: 1rem;
   }
   
-  .social-icons {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .social-icon {
-    text-decoration: none;
-    color: var(--color-text);
-    font-size: 1.5rem;
-    transition: color 0.3s;
-  }
-  
-  .social-icon:hover {
-    color: var(--color-primary);
-  }
-  
   @media (max-width: 768px) {
     .footer-content {
       font-size: 0.9rem;
-    }
-  
-    .social-icons {
-      flex-direction: column;
-      gap: 0.5rem;
     }
   }
   
