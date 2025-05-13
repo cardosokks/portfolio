@@ -1,5 +1,5 @@
 :root {
-    --color-background: #1f1f2e;
+    --color-background: #000000;
     --color-surface: rgba(255, 255, 255, 0.05);
     --color-overlay: rgb(31, 31, 46);
     --color-primary: #0057d9;
@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -24,6 +25,7 @@ body {
     background-size: 200px;
     color: var(--color-text);
     animation: fadeInBody 1s ease-in;
+    overflow-x: hidden;
 }
 
 @keyframes fadeInBody {

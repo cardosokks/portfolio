@@ -2,7 +2,7 @@
  
 /* Estilo geral da seção */
 .sobre-container {
-    background: linear-gradient(to bottom, #1f1f2e, #ffffff);
+    background: linear-gradient(to bottom, #000000, #ffffff);
     margin: 0 auto;
     padding: 0 2rem 2rem 2rem;
     position: relative;
@@ -23,18 +23,26 @@
     box-shadow: 0 0 10px var(--color-accent);
 }
 
-/* Estilo do título */
-.sobre-container h1 {
-    font-size: 2.5rem;
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    border: #ffffff solid 2px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 2rem;
-    position: relative;
-    z-index: 1;
+.banner-titulo {
+  width: 100%;
+  max-height: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  margin-bottom: 100px;
 }
+
+.banner-titulo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Máscara de transparência nas bordas */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+}
+
 
 /* Estilo das caixas de história */
 .sobre-item {
@@ -42,7 +50,9 @@
     background-image: url('../images/titulo.jpg');
     background-color: black;
     border-radius: 12px;
-    border:#ffffff solid 4px;
+    border-color: rgb(31, 57, 255);
+    border-width: 4px;
+    border-style: solid;
     padding: 2rem;
     margin: 1.5rem 0;
     box-shadow: 0 4px 8px var(--color-shadow);
