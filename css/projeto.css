@@ -59,11 +59,13 @@
   }
   
   .card-content h3 {
+    color: #000;
     margin: 0 0 0.5rem;
     font-size: 1.3rem;
   }
   
   .card-content p {
+    color: black;
     flex-grow: 1;
     font-size: 0.95rem;
     margin-bottom: 1rem;
