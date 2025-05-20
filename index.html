@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
 </head>
+
 <body>
     <div id="background-container"></div>
     <nav class="navbar">
-        <div class="logo"><a href="/">RICARDO / JRC</a></div>
-    
+        <div class="logo"><a href="/">FULLSTACK DEVELOPER</a></div>
+
         <ul class="nav-links" id="nav-links">
-          <li><a href="#sobre-container">Sobre</a></li>
-          
-          <li><a href="#projeto-container">Projetos</a></li>
-          <li><a href="#Contato">Contato</a></li>
+            <li><a href="#sobre-container">Sobre</a></li>
+
+            <li><a href="#projeto-container">Projetos</a></li>
+            <li><a href="#Contato">Contato</a></li>
         </ul>
         <div class="menu-toggle" id="menu-toggle">☰</div>
     </nav>
@@ -26,23 +28,147 @@
             <div class="presentation-content">
                 <div class="text">
                     <h1>Olá, sou Ricardo Cardoso</h1>
-                    <p>Bem-vindo ao meu portfólio profissional. Aqui você pode conhecer um pouco mais sobre mim, meus projetos e habilidades.</p>
-                    <social-component></social-component>
-                    <h2 style="color:rgb(31, 57, 255); text-align: center;">FULL STACK DEVELOPER</h2>
+                    <p>Bem-vindo ao meu portfólio profissional. Aqui você pode conhecer um pouco mais sobre mim, meus
+                        projetos e habilidades.</p>
+                    <section class="social-section">
+                        <div class="social-icons">
+                            <a href="https://github.com/cardosokks" target="_blank" class="icon github"
+                                aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/cardosokks" target="_blank" class="icon linkedin"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com/cardosokks" target="_blank" class="icon instagram"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </section>
                 </div>
                 <div class="perfil-circle">
                     <img src="images/perfil.jpg" alt="Imagem de Perfil">
-                </div>         
+                </div>
             </div>
         </section>
-        <sobre-component></sobre-component>
-        <projeto-component></projeto-component>
     </div>
-    <footer-component></footer-component>
-    
-<script src="components.js"></script>
-<script src="js/script.js"></script>
-<script src="js/background.js"></script>
-<script src="https://kit.fontawesome.com/5fa3aac64f.js" crossorigin="anonymous"></script>
+    <div id="sobre-container" class="banner-titulo">
+        <img src="images/sobre_mim.jpg" alt="Sobre mim">
+    </div>
+    <section class="sobre-container">
+
+        <div class="sobre-item esquerda">
+            <img src="images/sobre/imagem1.jpg" alt="Início na tecnologia">
+            <p>Meu nome é Ricardo, tenho 27 anos, e minha paixão por tecnologia começou desde cedo.</p>
+        </div>
+        <div class="banner-titulo"></div>
+
+        <div class="sobre-item direita">
+            <img src="images/sobre/imagem2.jpg" alt="Batch scripts">
+            <p>Com apenas 12 anos, comecei a criar meus primeiros scripts em Batch — ali percebi que programar era como
+                brincar com o impossível.</p>
+        </div>
+
+        <div class="sobre-item esquerda">
+            <img src="images/sobre/imagem3.jpg" alt="Cybersegurança">
+            <p>Por volta dos 14, me aventurei na curiosidade sobre trojans e keyloggers, cogitando a área de
+                cibersegurança — mas meu coração sempre bateu mais forte por criar soluções.</p>
+        </div>
+
+        <div class="sobre-item direita">
+            <img src="images/sobre/imagem4.jpg" alt="Trabalho escolar">
+            <p>Um dos momentos marcantes foi quando fiz um trabalho de inglês com Adobe Framework. A professora amou
+                tanto que mostrou para a escola toda — e eu ganhei um 10!</p>
+        </div>
+
+        <div class="sobre-item esquerda">
+            <img src="images/sobre/imagem5.jpg" alt="Aprendendo C">
+            <p>Com incentivo do meu primo, comecei a aprender lógica de programação e dei meus primeiros passos em C,
+                entendendo de fato como os códigos ganhavam vida.</p>
+        </div>
+
+        <div class="sobre-item direita">
+            <img src="images/sobre/imagem6.jpg" alt="Estudos contínuos">
+            <p>A partir dali, nunca mais parei: estudo até hoje, sempre buscando crescer como criador e profissional.
+            </p>
+        </div>
+
+        <div class="sobre-item esquerda">
+            <img src="images/sobre/imagem7.jpg" alt="CRUD Python Django">
+            <p>Com Python, Django e outras ferramentas, desenvolvi meu primeiro CRUD — e tive certeza de que estava no
+                caminho certo.</p>
+        </div>
+
+        <div class="sobre-item direita">
+            <img src="images/sobre/imagem8.jpg" alt="Experiência profissional">
+            <p>Trabalhei em diversas funções como T.I, Gerente de T.I e Suporte. Também realizei manutenções em
+                computadores e ajudei empresas a manterem suas operações funcionando.</p>
+        </div>
+
+        <div class="sobre-item esquerda">
+            <img src="images/sobre/imagem9.jpg" alt="Carreira de desenvolvedor">
+            <p>Hoje, sigo me aprimorando e buscando realizar meu maior objetivo: consolidar minha carreira como
+                Desenvolvedor.</p>
+        </div>
+    </section>
+    <section id="projeto-container" class="projeto-container">
+        <div class="banner-titulo">
+            <img src="images/projetos.png" alt="Sobre mim">
+        </div>
+        <section class="card-container">
+            <!-- BLOCO DO CARD -->
+            <div class="card">
+                <img
+                    src="https://raw.githubusercontent.com/cardosokks/css-background_effect_1/main/images/preview.gif" />
+                <div class="card-content">
+                    <h3>Backgrounf Effect</h3>
+                    <p>tecnologias: html/js/css</p>
+                    <div class="card-buttons">
+                        <a href="https://cardosokks.github.io/css-background_effect_1/"
+                            class="btn-primary">Pré-visualizar</a>
+                        <a href="https://github.com/cardosokks/css-background_effect_1" class="btn-github"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/cardosokks/drag_and_drop_video/main/images/preview.gif" />
+                <div class="card-content">
+                    <h3>Drag And Drop Video</h3>
+                    <p>tecnologias: html/js/css</p>
+                    <div class="card-buttons">
+                        <a href="https://cardosokks.github.io/drag_and_drop_video/"
+                            class="btn-primary">Pré-visualizar</a>
+                        <a href="https://github.com/cardosokks/drag_and_drop_video" class="btn-github"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/titulo.jpg" />
+                <div class="card-content">
+                    <h3>EM BREVE +</h3>
+                    <p>Projetos novos virão. Fique á vontade caso queira compartilhar seus projetos comigo no LINKEDIN.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <social-component></social-component>
+                <p>&copy; 2025 Ricardo/JRC. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/background.js"></script>
+    <script src="https://kit.fontawesome.com/5fa3aac64f.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
