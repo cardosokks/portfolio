@@ -8,7 +8,6 @@ Este é um portfólio simples e responsivo feito com **HTML**, **CSS** e **JavaS
 
 portfolio \
 ├── index.html # Página principal\
-├── components.js # Código Componentes
 ├── css/\ Estilos do portfólio\
 ├── js/\ Scripts para interatividade\
 ├── images/\ Imagens usadas no site\
