@@ -107,25 +107,13 @@ function criarCard(proj) {
   h3.textContent = proj.nome;
   cardContent.appendChild(h3);
 
-  const p = document.createElement("p");
-  p.textContent = proj.descricao;
-  cardContent.appendChild(p);
-
   const techIcons = document.createElement("div");
   techIcons.className = "tech-icons";
-  techIcons.style.display = "flex";
-  techIcons.style.gap = "10px";
-  techIcons.style.margin = "10px 0";
 
   proj.techs.forEach((tech) => {
     const span = document.createElement("span");
     span.style.background = tech.bg;
-    span.style.borderRadius = "50%";
-    span.style.width = "36px";
-    span.style.height = "36px";
-    span.style.display = "flex";
-    span.style.alignItems = "center";
-    span.style.justifyContent = "center";
+
 
     const i = document.createElement("i");
     i.className = tech.iconClass;
