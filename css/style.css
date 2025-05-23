@@ -368,12 +368,14 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     gap: 2rem;
+    
 }
 
 .icon {
     font-size: 1.5rem;
     transition: transform 0.3s ease, color 0.3s ease;
     color: white;
+    cursor: none;
 }
 
 .icon:hover {
@@ -381,15 +383,13 @@ body {
     text-shadow: 0 0 8px var(--color-primary), 0 0 16px var(--color-primary-hover), 0 0 32px var(--color-primary-hover);
 }
 
-/* Estilo do Sobre */
-/* Estilo geral da seção */
-.sobre-container {
-    background: linear-gradient(to bottom, var(--color-background), var(--color-primary), var(--color-background));
-    margin: 0 auto;
-    padding: 2rem 2rem 2rem 2rem;
-    position: relative;
+.banner-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
     text-align: center;
-    color: var(--color-text);
 }
 
 .banner-titulo h1 {
@@ -411,73 +411,7 @@ body {
 
 }
 
-.banner-titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-}
 
-
-/* Estilo das caixas de história */
-.sobre-item {
-    max-width: 1200px;
-    background-image: url('../images/titulo.jpg');
-    background-color: black;
-    border-radius: 12px;
-    border-color: var(--color-primary);
-    border-width: 4px;
-    border-style: solid;
-    padding: 2rem;
-    margin: 1.5rem 0;
-    box-shadow: 0 4px 8px var(--color-shadow);
-    transition: transform var(--transition-default);
-    position: relative;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-}
-
-.sobre-item p {
-    font-family: 'VT323', 'Merriweather', serif;
-    text-align: justify;
-    font-size: 25pt;
-    color: var(--color-text);
-
-}
-
-.sobre-item img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-/* Adicionando o efeito "hover" nas imagens */
-.sobre-item img:hover {
-    transform: scale(1.1);
-}
-
-/* Desenhando as caixas na esquerda e direita */
-.sobre-item.esquerda {
-    margin-left: 30%;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-.sobre-item.direita {
-    margin-right: 20%;
-    text-align: right;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 2rem;
-}
 
 /* Estilo Projetos */
 
@@ -650,6 +584,31 @@ iframe {
 }
 
 
+
+
+.services-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-card-container .card-content{
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.services-card-container .card-content h2{
+    padding: 2rem;
+}
+
+.services-card-container .card .card-content .tech-icons{
+    padding: 0.5rem;
+
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .navbar {
@@ -712,41 +671,6 @@ iframe {
 
     .social-section .social-icons {
         display: none;
-    }
-
-
-    .sobre-item {
-        flex-direction: column !important;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1.5rem;
-    }
-
-    .sobre-item.esquerda,
-    .sobre-item.direita {
-        flex-direction: column !important;
-        align-items: center;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .sobre-item img {
-        width: 180px;
-        height: 180px;
-        margin-bottom: 1rem;
-    }
-
-    .sobre-item p {
-        font-size: 18pt;
-        text-align: justify;
-        padding: 0 0.5rem;
-    }
-
-    .sobre-container h1 {
-        font-size: 2rem;
-        padding: 10px;
     }
 
     .card-container {
