@@ -304,13 +304,13 @@ body {
 }
 
 #background-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
+    overflow: hidden;
     pointer-events: none;
-    /* para não atrapalhar cliques */
     z-index: -1;
 }
 
@@ -320,6 +320,7 @@ body {
     height: 50px;
     opacity: 0.6;
     animation: float 10s infinite linear;
+    pointer-events: none;
 }
 
 @keyframes float {
@@ -529,12 +530,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .card-content h3 {
     color: #ffffff;
     margin: 0 0 0.5rem;
     font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 .card-content p {
@@ -681,7 +684,7 @@ iframe {
         padding: 0;
     }
     .banner-titulo h1 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .presentation {
@@ -748,7 +751,7 @@ iframe {
 
     .card-container {
         justify-content: center;
-        padding: 1rem;
+        padding: 1rem 0;
     }
 
     .card-content .card-buttons {
