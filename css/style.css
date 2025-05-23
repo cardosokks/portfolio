@@ -10,6 +10,7 @@
     --color-white: #ffffff;
     --transition-default: 0.3s ease-in-out;
     --color-accent: white;
+    --cursor-color: #00fff2;
 }
 
 * {
@@ -19,6 +20,7 @@
 }
 
 body {
+    cursor: none;
     font-family: 'VT323', 'Segoe UI', sans-serif;
     background-color: var(--color-background);
     background-repeat: repeat;
@@ -27,6 +29,36 @@ body {
     animation: fadeInBody 1s ease-in;
     overflow-x: hidden;
 }
+
+.cursor {
+      width: 30px;
+      height: 30px;
+      border: 2px solid var(--cursor-color);
+      border-radius: 50%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      transition: transform 0.1s ease;
+      transform: translate(-50%, -50%);
+      animation: pulse 1s infinite;
+      z-index: 1005;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.6;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
 
 .bt1 {
     width: 100%;
@@ -38,6 +70,7 @@ body {
     text-decoration: none;
     font-size: 10pt;
     font-weight: bold;
+    cursor: none;
 }
 
 .bt2 {
@@ -50,6 +83,7 @@ body {
     text-decoration: none;
     font-size: 10pt;
     font-weight: bold;
+    cursor:none;
 }
 
 
@@ -57,13 +91,11 @@ body {
     border-color: var(--color-primary-hover);
     color: var(--color-background);
     background: var(--color-white);
-    cursor: pointer;
 }
 
 .bt2:hover {
     background: var(--color-white);
     color: var(--color-background);
-    cursor: pointer;
 }
 
 @keyframes fadeInBody {
@@ -120,6 +152,7 @@ body {
     text-decoration: none;
     color: white;
     font-variant: all-petite-caps;
+    cursor: none;
 }
 
 .logo:hover {
@@ -144,6 +177,7 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     transition: var(--transition-default);
+    cursor: none;
 }
 
 .nav-links li a:hover {
@@ -155,7 +189,6 @@ body {
 .menu-toggle {
     display: none;
     font-size: 2rem;
-    cursor: pointer;
     color: var(--color-white);
     z-index: 1100;
     transition: color var(--transition-default);
@@ -169,7 +202,6 @@ body {
     align-items: center;
     height: 90vh;
     padding: 2rem;
-    cursor: default;
 }
 
 .presentation-content {
