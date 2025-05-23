@@ -19,6 +19,10 @@
 
 }
 
+html {
+      scroll-behavior: smooth;
+    }
+
 body {
     cursor: none;
     font-family: 'VT323', 'Segoe UI', sans-serif;
@@ -390,6 +394,7 @@ body {
     align-items: center;
     padding: 0 2rem;
     text-align: center;
+    
 }
 
 .banner-titulo h1 {
@@ -407,6 +412,7 @@ body {
     border-radius: 1rem;
     width: 100%;
     max-width: 1200px;
+    box-shadow: 0 0 25px var(--color-primary);
 
 
 }
@@ -444,6 +450,7 @@ body {
     display: flex;
     flex-direction: column;
     animation: fadeInCard 0.8s ease forwards;
+    width: 100%;
 
 }
 
@@ -530,8 +537,13 @@ body {
 .footer {
     background-color: var(--color-background);
     color: var(--color-text);
-    padding: 2rem 0;
+    padding: 2rem;
+    margin-top: 2rem;
     text-align: center;
+    border-top: var(--color-primary) solid 2px;
+    box-shadow: 0 0 25px var(--color-primary);
+    backdrop-filter: blur(4px);
+
 }
 
 .footer-container {
@@ -555,7 +567,7 @@ body {
 }
 
 .iframe-wrapper {
-    width: 1366px;
+    width: 100%;
     height: 2000px;
     /* Altura alta para animar bastante */
     transform: scale(0.3);
@@ -588,11 +600,13 @@ iframe {
 
 .services-card-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
 }
 
 .services-card-container .card-content{
@@ -601,7 +615,7 @@ iframe {
 }
 
 .services-card-container .card-content h2{
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .services-card-container .card .card-content .tech-icons{
@@ -680,6 +694,11 @@ iframe {
 
     .card-content .card-buttons {
         flex-wrap: wrap;
+    }
+
+    .services-card-container{
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr ));
     }
 
 
