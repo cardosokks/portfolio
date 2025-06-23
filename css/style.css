@@ -242,8 +242,8 @@ body {
 
 
 .perfil-circle {
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 25px var(--color-primary);
@@ -398,7 +398,7 @@ body {
 }
 
 .banner-titulo h1 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--color-background);
     background-color: transparent;
@@ -409,17 +409,13 @@ body {
     background-image: radial-gradient(var(--color-background) 0.5px, var(--color-primary) 0);
     background-size: 10px 10px;
     border: transparent solid 2px;
-    border-radius: 1rem;
+    border-radius: 2rem;
     width: 100%;
     max-width: 1200px;
     box-shadow: 0 0 25px var(--color-primary);
-
-
 }
 
 
-
-/* Estilo Projetos */
 
 .projeto-container {
     background: var(--color-background);
@@ -443,7 +439,6 @@ body {
     background-color: var(--color-background);
     border-radius: 15px;
     border: var(--color-primary) solid 2px;
-    max-height: 500px;
     overflow: hidden;
     box-shadow: 0 8px 20px var(--color-primary-hover);
     transition: transform 0.3s ease;
@@ -515,7 +510,12 @@ body {
     border: var(--color-primary) solid 2px;
     border-radius: 0.8rem;
     gap: 10px;
-    margin: 10px 0;
+    margin: 1em;
+}
+
+/* Diminui o tempo de exibição do tooltip do aria-label (acessibilidade nativa depende do navegador, mas para tooltips customizados use algo assim:) */
+[aria-label][data-tooltip]::after {
+    transition-delay: -1s !important; /* tempo menor para aparecer */
 }
 
 .tech-icons span {
@@ -611,11 +611,15 @@ iframe {
 
 .services-card-container .card-content{
     min-height: 200px;
-    max-height: 200px;
 }
 
 .services-card-container .card-content h2{
     padding: 2rem 0;
+}
+
+.services-card-container .card-content p{
+    padding: 1rem;
+    text-align: justify;
 }
 
 .services-card-container .card .card-content .tech-icons{
@@ -700,6 +704,11 @@ iframe {
 
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr ));
     }
+
+    .tech-icons span {
+    width: 25px;
+    height: 25px;
+}
 
 
 
