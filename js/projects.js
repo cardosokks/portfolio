@@ -25,56 +25,7 @@ const projetos = [
       { bg: "#2965f1", iconClass: "fab fa-css3-alt", iconColor: "white" },
     ],
   },
-  {
-    nome: "IFB - Exercício 1",
-    descricao: "TECNOLOGIAS",
-    previewType: "iframe",
-    iframe_src: "https://cardosokks.github.io/ifb_atividade_html/",
-    link_preview: "https://cardosokks.github.io/ifb_atividade_html/",
-    link_github: "https://github.com/cardosokks/ifb_atividade_html/",
-    techs: [
-      { bg: "#e44d26", iconClass: "fab fa-html5", iconColor: "white" },
-      { bg: "#f7df1e", iconClass: "fab fa-js", iconColor: "#323330" },
-      { bg: "#2965f1", iconClass: "fab fa-css3-alt", iconColor: "white" },
-    ],
-  },
-  {
-    nome: "IFB - Exercício 2",
-    descricao: "TECNOLOGIAS",
-    previewType: "iframe",
-    iframe_src: "https://cardosokks.github.io/ifb_atividade_html_2/",
-    link_preview: "https://cardosokks.github.io/ifb_atividade_html_2/",
-    link_github: "https://github.com/cardosokks/ifb_atividade_html_2/",
-    techs: [
-      { bg: "#e44d26", iconClass: "fab fa-html5", iconColor: "white" },
-      { bg: "#f7df1e", iconClass: "fab fa-js", iconColor: "#323330" },
-      { bg: "#2965f1", iconClass: "fab fa-css3-alt", iconColor: "white" },
-    ],
-  },
-  {
-    nome: "IFB - Exercício 3",
-    descricao: "TECNOLOGIAS",
-    previewType: "iframe",
-    iframe_src: "https://cardosokks.github.io/ifb_atividade_html_3/",
-    link_preview: "https://cardosokks.github.io/ifb_atividade_html_3/",
-    link_github: "https://github.com/cardosokks/ifb_atividade_html_3/",
-    techs: [
-      { bg: "#e44d26", iconClass: "fab fa-html5", iconColor: "white" },
-      { bg: "#2965f1", iconClass: "fab fa-css3-alt", iconColor: "white" },
-    ],
-  },
-  {
-    nome: "IFB - Exercício 4",
-    descricao: "TECNOLOGIAS",
-    previewType: "iframe",
-    iframe_src: "https://cardosokks.github.io/ifb_atividade_html_4/",
-    link_preview: "https://cardosokks.github.io/ifb_atividade_html_4/",
-    link_github: "https://github.com/cardosokks/ifb_atividade_html_4/",
-    techs: [
-      { bg: "#e44d26", iconClass: "fab fa-html5", iconColor: "white" },
-      { bg: "#2965f1", iconClass: "fab fa-css3-alt", iconColor: "white" },
-    ],
-  },
+ 
 ];
 
 
@@ -152,7 +103,7 @@ function criarCard(proj) {
 }
 
 
-// função para inserir os cards na section
+//Inserir os cards na section
 function carregarCards() {
   const container = document.querySelector(".card-container");
   if (!container) return;
