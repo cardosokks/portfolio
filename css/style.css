@@ -3,14 +3,14 @@
 :root {
     --color-background: #0e0e0e;
     --color-overlay: rgb(31, 31, 46);
-    --color-primary: #00ced5;
-    --color-primary-hover: #00fff2;
+    --color-primary: #ff0000fe;
+    --color-primary-hover: rgba(166, 0, 255, 0.918)
     --color-secondary: #2f2f45;
     --color-text: #f0f0f0;
     --color-white: #ffffff;
     --transition-default: 0.3s ease-in-out;
     --color-accent: white;
-    --cursor-color: #00fff2;
+    --cursor-color: #ff0000;
 }
 
 * {
